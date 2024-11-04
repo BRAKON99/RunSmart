@@ -1,6 +1,23 @@
 * {
     font-family: 'Open-Sans', sans-serif;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+ }
 .container {
     max-width: 950px;
     margin: 0 auto;
@@ -22,6 +39,12 @@
         height: 50px;
         font-size: 16px;
     }
+    &_submit {
+        width: 100%;
+        height: 55px;
+        font-size: 16px;
+        color: #fff;
+    }
 }
 
 .title {
@@ -29,4 +52,11 @@
     font-size: 30px;
     font-weight: 700;
     color: #0d0d0d;
+    &_left {
+        color: #fff;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align-last: left;
+        line-height: 40px;
+    }
 }

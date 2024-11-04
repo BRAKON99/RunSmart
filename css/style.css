@@ -97,6 +97,25 @@ legend {
   font-family: "Open-Sans", sans-serif;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+
 .container {
   max-width: 950px;
   margin: 0 auto;
@@ -119,12 +138,26 @@ legend {
   height: 50px;
   font-size: 16px;
 }
+.button_submit {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  color: #fff;
+}
 
 .title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   color: #0d0d0d;
+}
+.title_left {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  line-height: 40px;
 }
 
 /* Секции */
@@ -386,4 +419,60 @@ legend {
   font-size: 14px;
   text-align: center;
   font-weight: 300;
+}
+
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px 0;
+  background: url("../../img/bg2.jpg") center center/cover no-repeat;
+}
+.consultation__descr {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.feed-form {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.feed-form input {
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 15px;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 300;
+}
+.feed-form input:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  padding: 81px 0 82px 0;
+}
+.carousel__inner {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+}
+.carousel .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: -66px;
+  transform: translateY(-50%);
+}
+.carousel .slick-next {
+  position: absolute;
+  right: -66px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
