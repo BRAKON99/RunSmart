@@ -4,13 +4,6 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrows-left.png"</button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrows-right.png"</button>',
         responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                dots: true,
-                arrows: false,
-              }
-            }
         ]
     });
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
