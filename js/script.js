@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1000,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrows-left.png"</button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrows-right.png"</button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="./icons/arrows-left.png"</button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="./icons/arrows-right.png"</button>',
         responsive: [
         ]
     });
@@ -39,7 +39,7 @@ $(document).ready(function(){
           $('.overlay, #order').fadeIn('slow')
         })
       }); 
-      
+
       /* Mask */
 
       $('input[name=phone]').mask("+7 (999) 999-99-99");
