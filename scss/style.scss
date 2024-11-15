@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 /* Базовая настройка */
 @import "./base/reset";
+@import "./libs/slick";
 @import "./base/var";
 @import "./base/mixin";
 @import "./base/base";
+@import "./base/animation";
 /* Секции */
 @import "./blocks/media";
 @import "./blocks/promo";

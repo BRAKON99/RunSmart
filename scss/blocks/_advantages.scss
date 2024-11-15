@@ -24,4 +24,12 @@
         text-align: center;
         font-weight: 300;
     }
-}
+    &__icon {
+        &_animate {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}   
